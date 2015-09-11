@@ -19,18 +19,22 @@
             width: 320px;
             height: 380px;
             margin-top: 200px;
-        }
+            margin-left: 500px;
 
+        }
+        body {
+            background-image: url("/page-background.png");
+
+
+        }
 
     </style>
 </head>
 <body>
 
-<div class="container" id="rcorners2">
+<div class="w3-card-24" id="rcorners2">
 
-    <header class="w3-container w3-light-green">
-        <h4><small>Welcome</small> Demak Pvt Ltd</h4>
-    </header>
+
     <div class="w3-container" style="padding-top: 2px">
         <form role="form" action="loginAction">
             <div class="form-group">

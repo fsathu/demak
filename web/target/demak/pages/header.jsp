@@ -21,9 +21,9 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<s:action name="viewHome"/>">Home</a></li>
-        <li><a href="<s:action name="viewInvoice"/>">Invoice</a></li>
-        <li><a href="<s:action name="viewProducts"/>">Product Details</a></li>
+        <li class="active"><a href="<s:url action ="viewHome"/>">Home</a></li>
+        <li><a href="<s:url action ="viewInvoice"/>">Invoice</a></li>
+        <li><a href="<s:url action ="viewProducts"/>">Product Details</a></li>
         <li><a href="#">Cash Summary</a></li>
         <li><a href="#">Stock Summary</a></li>
         <li><a href="#">Contact Us</a></li>
