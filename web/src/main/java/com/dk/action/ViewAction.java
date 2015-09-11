@@ -10,6 +10,9 @@ public class ViewAction extends ActionSupport {
     public String viewProducts(){
         return SUCCESS;
     }
+    public String viewInvoice(){
+        return SUCCESS;
+    }
 
 
 }

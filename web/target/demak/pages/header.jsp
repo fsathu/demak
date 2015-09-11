@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -20,9 +21,9 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.jsp">Home</a></li>
-        <li><a href="Invoice.jsp" onclick="openInvoice()">Invoice</a></li>
-        <li><a href="#" name="product_details">Product Details</a></li>
+        <li class="active"><a href="<s:action name="viewHome"/>">Home</a></li>
+        <li><a href="<s:action name="viewInvoice"/>">Invoice</a></li>
+        <li><a href="<s:action name="viewProducts"/>">Product Details</a></li>
         <li><a href="#">Cash Summary</a></li>
         <li><a href="#">Stock Summary</a></li>
         <li><a href="#">Contact Us</a></li>

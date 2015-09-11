@@ -13,5 +13,10 @@
                         <result name="success" type="tiles">/welcome.tiles</result>
                         <result name="error">/pages/login.jsp</result>
                 </action>
+                <action name="viewProducts" class="com.dk.action.ViewAction" method="viewProducts">
+                        <result name="success" type="tiles">/product.tiles</result>
+                        <result name="error">/pages/login.jsp</result>
+                </action>
+
         </package>
 </struts>
