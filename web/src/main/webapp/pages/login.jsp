@@ -46,7 +46,7 @@
                 <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" style="width: 250px">
             </div>
             <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
+                <label><input type="checkbox"> Remember me</label> | <a href="#" class="btn-primary">Sign Up</a>
             </div>
 
             <button type="reset" class="btn btn-default">Reset</button>

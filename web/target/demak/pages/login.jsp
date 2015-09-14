@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/test.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-    <style>
+    <style type="text/css">
         #rcorners2 {
             border-radius: 25px;
             border: 2px solid #8AC007;
@@ -22,11 +22,9 @@
             margin-left: 500px;
 
         }
-        body {
-            background-image: url("/page-background.png");
-
-
-        }
+       body{
+background-color: #595959;
+       }
 
     </style>
 </head>
@@ -46,7 +44,7 @@
                 <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" style="width: 250px">
             </div>
             <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
+                <label><input type="checkbox"> Remember me</label> | <a href="#" class="btn-primary">Sign Up</a>
             </div>
 
             <button type="reset" class="btn btn-default">Reset</button>

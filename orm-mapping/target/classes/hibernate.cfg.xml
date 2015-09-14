@@ -16,6 +16,6 @@
               
         <mapping class="com.dk.model.User"/>
          <mapping class="com.dk.model.PersonalDetails"/>
-         <mapping class="com.dk.model.Vacancy"/>
+
     </session-factory>
 </hibernate-configuration>
