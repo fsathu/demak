@@ -31,6 +31,12 @@
     .errors li{
       list-style: none;
     }
+    body {
+
+      background-image: url("page-background.png");
+
+
+    }
   </style>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -87,7 +93,7 @@
   </div>
 </div>
 <display:table class="table table-striped table-bordered" id="collection" name="productsList"
-               pagesize="10" requestURI="loadList">
+               pagesize="5" requestURI="loadList">
   <display:column property="productName" title="Product Name"/>
   <display:column property="buyingPrice" title="Buying Price"/>
   <display:column property="sellingPrice" title="Selling Price"/>

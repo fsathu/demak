@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,14 +32,28 @@
         .fonts{
             color: white;
         }
+        .errors {
+            background-color:#FFCCCC;
+
+            width:100%;
+            color: #ee5f5b;
+            margin-bottom:8px;
+            border-radius: 25px;
+        }
+        .errors li{
+            list-style: none;
+        }
 
     </style>
 </head>
 <body>
+<s:if test="hasActionErrors()">
+    <div class="errors">
+        <s:actionerror/>
+    </div>
+</s:if>
 
 <div class="w3-card-24" id="rcorners2">
-
-
     <div class="w3-container" style="padding-top: 2px">
         <form role="form" action="loginAction" method="post">
             <div class="row" style="padding-bottom: 10px">
@@ -55,7 +70,7 @@
             </div>
 
             <div class="checkbox">
-                <label class="fonts"><input type="checkbox"> Remember me</label> | <a href="#" class="fonts">Sign Up</a>
+                <label class="fonts"><input type="checkbox"> Remember me</label> | <a href="#" class="fonts" data-toggle="modal" data-target="#myModal">Forgot Password?</a>
             </div>
 
             <button type="reset" class="btn btn-default">Reset</button>
@@ -64,6 +79,37 @@
 
     </div>
 
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Reset Password</h4>
+            </div>
+            <div class="modal-body">
+                <div class="w3-container" style="padding-top: 2px">
+                    <form role="form" action="test" method="post">
+
+                            <div class="row" style="padding-bottom: 10px">
+                                <div class="col-xs-5">
+                                    <label for="modalemail">Email:</label>
+                                    <input type="email" class="form-control" id="modalemail" placeholder="Enter email" name="email">
+                                </div>
+                            </div>
+
+
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 </body>

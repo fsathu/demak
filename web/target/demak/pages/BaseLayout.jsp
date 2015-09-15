@@ -23,6 +23,8 @@
 <div id="body">
  <tiles:insertAttribute name="body"/>
 </div>
+
+
 <div id="footer">
 <tiles:insertAttribute name="footer"/>
 

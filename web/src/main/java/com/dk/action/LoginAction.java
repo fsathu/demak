@@ -1,7 +1,6 @@
 package com.dk.action;
 
 
-
 import com.dk.model.User;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
@@ -14,24 +13,31 @@ import java.util.Map;
 /**
  * Created by fredrick on 8/18/15.
  */
-public class LoginAction extends ActionSupport implements ModelDriven<User>,SessionAware {
-    User user = new User();
-    private UserService userService=new UserServiceImpl();
-    private Map<String, Object> sessionMap;
-    public String loginAction(){
-        System.out.println("Email= " + user.getEmail() + "password = " + user.getPassword());
+public class LoginAction extends ActionSupport implements ModelDriven<User>, SessionAware {
 
-        if (userService.findUserbyEmailandPassword(user.getEmail(), user.getPassword())!= null){
-            sessionMap.put("email",user.getEmail());
+    User user = new User();
+    private UserService userService = new UserServiceImpl();
+    private Map<String, Object> sessionMap;
+
+
+    public String loginAction() {
+
+        if (userService.findUserbyEmailandPassword(user.getEmail(), user.getPassword()) != null) {
+            sessionMap.put("email", user.getEmail());
             return SUCCESS;
-        }else{
+        } else {
+            addActionError("Please check Username and Password");
             return ERROR;
         }
-
-
     }
-    public String logoutAction(){
-    sessionMap.remove("email");
+
+    public String logoutAction() {
+        sessionMap.remove("email");
+        return SUCCESS;
+    }
+
+    public String SignupAction() {
+
         return SUCCESS;
     }
 

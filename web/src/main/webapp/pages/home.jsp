@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="../css/test.css"/>
 
 <title>Insert title here</title>
- 
+    <style>
+        body {
+
+            background-image: url("page-background.png");
+
+
+        }
+    </style>
 </head>
 <body>
 <div>
