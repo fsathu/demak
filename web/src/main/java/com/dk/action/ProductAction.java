@@ -21,11 +21,18 @@ public class ProductAction extends ActionSupport implements ModelDriven<Product>
 
     public String addProduct(){
 
-        product.setExpiryDate(new Date());
-        product.setLastUpdateDate(new Date());
-        product.setLastUpdatedby((String) sessionMap.get("email"));
-        productService.save(product);
-        return SUCCESS;
+        if(product != null){
+            product.setExpiryDate(new Date());
+            product.setLastUpdateDate(new Date());
+            product.setLastUpdatedby((String) sessionMap.get("email"));
+            productService.save(product);
+            addActionMessage("Successfully Added");
+            return SUCCESS;
+        }else{
+            return ERROR;
+        }
+
+
     }
 
     @Override
