@@ -14,7 +14,8 @@
     .welcome {
       background-color:#DDFFDD;
       border:1px solid #009900;
-      width:200px;
+      color: #5bb75b;
+      width:100%;
       border-radius: 25px;
     }
     .welcome li{
@@ -35,17 +36,18 @@
 
 </head>
 <body>
+<s:if test="hasActionErrors()">
+  <div class="errors">
+    <s:actionerror/>
+  </div>
+</s:if>
+<s:if test="hasActionMessages()">
+  <div class="welcome">
+    <s:actionmessage/>
+  </div>
+</s:if>
 <div class="center">
-  <s:if test="hasActionErrors()">
-    <div class="errors">
-      <s:actionerror/>
-    </div>
-  </s:if>
-  <s:if test="hasActionMessages()">
-    <div class="welcome">
-      <s:actionmessage/>
-    </div>
-  </s:if>
+
   <div class="container-fluid " style="margin-left: 400px">
     <s:form action="addProduct">
       <div class="row" style="padding-bottom: 10px">
@@ -78,13 +80,26 @@
           <input class="form-control" id="qty" type="text" name="qty">
         </div>
       </div>
-      <div class="row" style="padding-bottom: 10px">
-        <s:submit value="Save" cssClass="btn btn-primary"></s:submit>
-        <s:reset value="Reset" cssClass="btn btn-danger"></s:reset>
-      </div>
+      <button type="reset" class="btn btn-default">Reset</button>
+      <button type="submit" class="btn btn-primary">Save</button>
     </s:form>
 
   </div>
 </div>
+<display:table class="table table-striped table-bordered" id="collection" name="productsList"
+               pagesize="10" requestURI="loadList">
+  <display:column property="productName" title="Product Name"/>
+  <display:column property="buyingPrice" title="Buying Price"/>
+  <display:column property="sellingPrice" title="Selling Price"/>
+  <display:column property="qty" title="Quantity"/>
+  <display:column property="expiryDate" title="Expiry Date"/>
+  <display:column property="lastUpdateDate" title="Last Updated Date"/>
+  <display:column titleKey="table.label.chargeType.edit">
+    <a href="<s:url action='#'>
+							<s:param name='chargeTypeId'><s:property value='%{#attr.chargeType.id}'/></s:param></s:url>">
+      <s:text name="edit"/>
+    </a>
+  </display:column>
+</display:table>
 </body>
 </html>

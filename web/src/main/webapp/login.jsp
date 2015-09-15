@@ -23,7 +23,7 @@
 
         }
         body {
-            background-color: #595959;
+            /*background-color: #595959;*/
             background-image: url("page-background.png");
 
 
@@ -40,7 +40,7 @@
 
 
     <div class="w3-container" style="padding-top: 2px">
-        <form role="form" action="loginAction">
+        <form role="form" action="loginAction" method="post">
             <div class="row" style="padding-bottom: 10px">
                 <div class="col-xs-12">
                     <label for="email" class="fonts">Email:</label>

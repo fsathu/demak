@@ -8,7 +8,9 @@ import org.apache.struts2.interceptor.SessionAware;
 import serviceImpl.ProductService;
 import serviceImpl.ProductServiceImpl;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,21 +21,34 @@ public class ProductAction extends ActionSupport implements ModelDriven<Product>
     Product product=new Product();
     ProductService productService=new ProductServiceImpl();
 
+    public List<Product> getProductsList() {
+        return productsList;
+    }
+
+    public void setProductsList(List<Product> productsList) {
+        this.productsList = productsList;
+    }
+
+    List<Product> productsList = new ArrayList<Product>();
+
     public String addProduct(){
 
-        if(product != null){
+        if(productService.findProductbyBarcode(product.getBarcode())== null){
             product.setExpiryDate(new Date());
             product.setLastUpdateDate(new Date());
             product.setLastUpdatedby((String) sessionMap.get("email"));
             productService.save(product);
-            addActionMessage("Successfully Added");
+            productsList.addAll(productService.finAllProducts());
+            addActionMessage("Product has been Successfully Added");
             return SUCCESS;
         }else{
+            addActionError("Product Already Exist");
             return ERROR;
         }
 
 
     }
+
 
     @Override
     public Product getModel() {

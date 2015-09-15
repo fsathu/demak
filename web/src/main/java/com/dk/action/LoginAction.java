@@ -16,7 +16,6 @@ import java.util.Map;
  */
 public class LoginAction extends ActionSupport implements ModelDriven<User>,SessionAware {
     User user = new User();
-
     private UserService userService=new UserServiceImpl();
     private Map<String, Object> sessionMap;
     public String loginAction(){
@@ -30,6 +29,10 @@ public class LoginAction extends ActionSupport implements ModelDriven<User>,Sess
         }
 
 
+    }
+    public String logoutAction(){
+    sessionMap.remove("email");
+        return SUCCESS;
     }
 
 

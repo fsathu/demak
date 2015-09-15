@@ -81,10 +81,25 @@
         </div>
       </div>
       <button type="reset" class="btn btn-default">Reset</button>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit" class="btn btn-primary">Save</button>
     </s:form>
 
   </div>
 </div>
+<display:table class="table table-striped table-bordered" id="collection" name="productsList"
+               pagesize="10" requestURI="loadList">
+  <display:column property="productName" title="Product Name"/>
+  <display:column property="buyingPrice" title="Buying Price"/>
+  <display:column property="sellingPrice" title="Selling Price"/>
+  <display:column property="qty" title="Quantity"/>
+  <display:column property="expiryDate" title="Expiry Date"/>
+  <display:column property="lastUpdateDate" title="Last Updated Date"/>
+  <display:column titleKey="table.label.chargeType.edit">
+    <a href="<s:url action='#'>
+							<s:param name='chargeTypeId'><s:property value='%{#attr.chargeType.id}'/></s:param></s:url>">
+      <s:text name="edit"/>
+    </a>
+  </display:column>
+</display:table>
 </body>
 </html>
