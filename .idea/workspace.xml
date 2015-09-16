@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bc37b45-2a67-434e-b236-8ceaa33933fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/action/LoginAction.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/action/LoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/action/ViewAction.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/action/ViewAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak.war" afterPath="$PROJECT_DIR$/web/target/demak.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/WEB-INF/lib/orm-mapping-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/demak/WEB-INF/lib/orm-mapping-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orm-mapping/target/orm-mapping.jar" afterPath="$PROJECT_DIR$/orm-mapping/target/orm-mapping.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/WEB-INF/lib/services-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/demak/WEB-INF/lib/services-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/target/services.jar" afterPath="$PROJECT_DIR$/services/target/services.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/WEB-INF/lib/web-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/demak/WEB-INF/lib/web-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/pages/BaseLayout.jsp" afterPath="$PROJECT_DIR$/web/target/demak/pages/BaseLayout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/Invoice.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/pages/Invoice.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/dk/action/LoginAction.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/dk/action/LoginAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/dk/action/ProductAction.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/dk/action/ProductAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/dk/action/ViewAction.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/dk/action/ViewAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/pages/home.jsp" afterPath="$PROJECT_DIR$/web/target/demak/pages/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orm-mapping/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/orm-mapping/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/services/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/products.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/pages/products.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/pages/products.jsp" afterPath="$PROJECT_DIR$/web/target/demak/pages/products.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/web/src/main/resources/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/struts.xml" afterPath="$PROJECT_DIR$/web/target/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/demak/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/target/demak/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/test/java/MyClass.java" afterPath="$PROJECT_DIR$/web/src/test/java/MyClass.java" />
     </list>
     <ignored path="Demak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,16 +44,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-10.25">
               <caret line="23" column="60" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orm-mapping/src/main/java/com/dk/model/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -133,7 +99,7 @@
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7196262">
+            <state vertical-scroll-proportion="1.4501511">
               <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
               <folding />
             </state>
@@ -209,7 +175,6 @@
         <option value="$PROJECT_DIR$/orm-mapping/src/main/java/com/dk/model/Product.java" />
         <option value="$PROJECT_DIR$/orm-mapping/src/test/java/TestAddProduct.java" />
         <option value="$PROJECT_DIR$/services/src/main/java/com/dk/action/ProductService.java" />
-        <option value="$PROJECT_DIR$/web/src/test/java/MyClass.java" />
         <option value="$PROJECT_DIR$/services/src/main/java/serviceImpl/ProductService.java" />
         <option value="$PROJECT_DIR$/orm-mapping/src/main/java/com/dk/dao/daoImpl/ProducDaoImpl.java" />
         <option value="$PROJECT_DIR$/orm-mapping/src/main/java/com/dk/dao/ProductDao.java" />
@@ -227,6 +192,7 @@
         <option value="$PROJECT_DIR$/web/src/main/java/com/dk/action/ViewAction.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/pages/Invoice.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/web/src/test/java/MyClass.java" />
       </list>
     </option>
   </component>
@@ -339,10 +305,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyClass.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -800,7 +762,7 @@
       <recent name="$PROJECT_DIR$/orm-mapping/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAddProduct">
+  <component name="RunManager" selected="Application.Dog">
     <configuration default="false" name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.63" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pages/login.jsp" />
       <deployment>
@@ -913,6 +875,21 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="orm-mapping" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Dog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Dog" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="web" />
       <envs />
       <method />
     </configuration>
@@ -1176,16 +1153,18 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
       <item index="2" class="java.lang.String" itemvalue="Application.TestAddProduct" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Dog" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestAddProduct" />
-        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.Dog" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestAddProduct" />
+        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -1205,12 +1184,12 @@
       <workItem from="1441965974778" duration="3324000" />
       <workItem from="1442141227212" duration="18526000" />
       <workItem from="1442278015236" duration="9589000" />
-      <workItem from="1442294522871" duration="18368000" />
+      <workItem from="1442294522871" duration="22008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71260000" />
+    <option name="totallyTimeSpent" value="74900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="-14" width="1329" height="792" extended-state="6" />
@@ -1224,22 +1203,22 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993559" sideWeight="0.4973262" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940387" sideWeight="0.5026738" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925898" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980901" sideWeight="0.5052161" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980901" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940617" sideWeight="0.4947839" order="0" side_tool="false" content_ui="combo" x="47" y="62" width="1309" height="744" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32850242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993559" sideWeight="0.4973262" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1612,14 +1591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/MyClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/pages/products.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.375">
@@ -1668,9 +1639,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/java/MyClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.07751938">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7196262">
+        <state vertical-scroll-proportion="1.4501511">
           <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
           <folding />
         </state>
