@@ -13,22 +13,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by fredrick on 9/14/15.
- */
 public class ProductAction extends ActionSupport implements ModelDriven<Product>,SessionAware{
     private Map sessionMap = ActionContext.getContext().getSession();
     Product product=new Product();
     ProductService productService=new ProductServiceImpl();
-
-    public List<Product> getProductsList() {
-        return productsList;
-    }
-
-    public void setProductsList(List<Product> productsList) {
-        this.productsList = productsList;
-    }
-
     List<Product> productsList = new ArrayList<Product>();
 
     public String addProduct(){
@@ -45,21 +33,23 @@ public class ProductAction extends ActionSupport implements ModelDriven<Product>
             addActionError("Product Already Exist");
             return ERROR;
         }
-
-
     }
-
 
     @Override
     public Product getModel() {
         return product;
     }
 
-
-
-
     @Override
     public void setSession(Map<String, Object> sessionMap) {
         this.sessionMap=sessionMap;
     }
+
+    public List<Product> getProductsList() {
+        return productsList;
+    }
+
+    public void setProductsList(List<Product> productsList) {
+        this.productsList = productsList;
+            }
 }

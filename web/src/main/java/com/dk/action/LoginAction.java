@@ -10,9 +10,7 @@ import serviceImpl.UserServiceImpl;
 
 import java.util.Map;
 
-/**
- * Created by fredrick on 8/18/15.
- */
+
 public class LoginAction extends ActionSupport implements ModelDriven<User>, SessionAware {
 
     User user = new User();

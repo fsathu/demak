@@ -12,7 +12,7 @@
 </head>
 <body>
 <div>
-  <jsp:include page="/pages/header.jsp"></jsp:include>
+
 </div>
 
 <h1>Hello INvoice</h1>

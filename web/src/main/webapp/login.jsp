@@ -34,7 +34,8 @@
         }
         .errors {
             background-color:#FFCCCC;
-
+            margin-top:8px;
+            height: auto;
             width:100%;
             color: #ee5f5b;
             margin-bottom:8px;
@@ -95,14 +96,14 @@
                     <form role="form" action="test" method="post">
 
                             <div class="row" style="padding-bottom: 10px">
-                                <div class="col-xs-5">
+                                <div class="col-xs-10">
                                     <label for="modalemail">Email:</label>
                                     <input type="email" class="form-control" id="modalemail" placeholder="Enter email" name="email">
                                 </div>
                             </div>
 
 
-                        <button type="submit" class="btn btn-primary">Create</button>
+                        <button type="submit" class="btn btn-primary">Reset</button>
                     </form>
 
                 </div>

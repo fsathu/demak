@@ -31,6 +31,10 @@ public class ViewAction extends ActionSupport {
 
         return SUCCESS;
     }
+    public String viewHome(){
+
+        return SUCCESS;
+    }
 
 
 

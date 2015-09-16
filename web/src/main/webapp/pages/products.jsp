@@ -62,32 +62,35 @@
           <input class="form-control" id="productName" type="text" name="productName">
         </div>
       </div>
-      <div class="row" style="padding-bottom: 10px">
+      <div class="row">
         <div class="col-xs-4">
           <label for="productCat">Barcode :</label>
           <input class="form-control" id="productCat" type="text" name="barcode">
         </div>
       </div>
-      <div class="row" style="padding-bottom: 10px">
+      <div class="row">
         <div class="col-xs-4">
           <label for="sellingPrice">Selling Price :</label>
           <input class="form-control" id="sellingPrice" type="text" name="sellingPrice">
         </div>
       </div>
-      <div class="row" style="padding-bottom: 10px">
+      <div class="row">
         <div class="col-xs-4">
           <label for="buyingPrice">Buying Price :</label>
           <input class="form-control" id="buyingPrice" type="text" name="buyingPrice">
         </div>
       </div>
-      <div class="row" style="padding-bottom: 10px">
+      <div class="row">
         <div class="col-xs-4">
           <label for="qty">Qty :</label>
           <input class="form-control" id="qty" type="text" name="qty">
         </div>
       </div>
-      <button type="reset" class="btn btn-default">Reset</button>
-      <button type="submit" class="btn btn-primary">Save</button>
+      <div class="row-fluid">
+        <button type="reset" class="btn btn-default">Reset</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+
     </s:form>
 
   </div>
