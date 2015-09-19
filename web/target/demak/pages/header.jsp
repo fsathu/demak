@@ -12,7 +12,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body onload="greeting()">
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -29,7 +29,7 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <i>${sessionScope.email}</i></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> <i id="greet"></i> <i>${sessionScope.email}</i></a></li>
         <li><a href="<s:url action="logout"/>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>
     </div>
@@ -39,3 +39,25 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+  var greet=document.getElementById("greet");
+  function greeting(){
+    var time=new Date()
+    var hours=time.getHours()
+    var hello="Hello, Nightowl!"
+    if (hours>5 && hours < 12){
+      hello="Good Morning!"
+    }
+    if (hours>12 && hours < 15){
+      hello="Good Day!"
+    }
+    if (hours>16){
+      hello="Good Evening!"
+    }
+    if (hours>22){
+      hello="Good Night!"
+    }
+    greet.innerHTML=hello;
+  }
+</script>

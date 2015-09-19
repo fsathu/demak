@@ -33,9 +33,12 @@
     }
     body {
 
-      background-image: url("page-background.png");
+      /*background-image: url("page-background.png");*/
 
 
+    }
+    .row{
+      margin-bottom: 10px;
     }
   </style>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -71,7 +74,7 @@
       <div class="row">
         <div class="col-xs-4">
           <label for="sellingPrice">Selling Price :</label>
-          <input class="form-control" id="sellingPrice" type="text" name="sellingPrice">
+          <input class="form-control" id="sellingPrice" type="text" name="sellingPrice" required="true">
         </div>
       </div>
       <div class="row">
@@ -86,9 +89,12 @@
           <input class="form-control" id="qty" type="text" name="qty">
         </div>
       </div>
-      <div class="row-fluid">
-        <button type="reset" class="btn btn-default">Reset</button>
-        <button type="submit" class="btn btn-primary">Save</button>
+      <div class="row">
+        <div class="col-xs-4">
+          <button type="reset" class="btn btn-default">Reset</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+
       </div>
 
     </s:form>

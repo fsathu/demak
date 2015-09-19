@@ -33,5 +33,9 @@
                         <result name="success" type="tiles">/welcome.tiles</result>
                         <result name="error" type="tiles">/product.tiles</result>
                 </action>
+                <action name="loadList" class="com.dk.action.ViewAction" method="viewProducts">
+                        <result name="success" type="tiles">/product.tiles</result>
+                        <result name="error" type="tiles">/product.tiles</result>
+                </action>
         </package>
 </struts>
