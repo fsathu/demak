@@ -14,9 +14,10 @@
 
        
               
-        <mapping class="com.dk.model.User"/>
+         <mapping class="com.dk.model.User"/>
          <mapping class="com.dk.model.PersonalDetails"/>
          <mapping class="com.dk.model.Product"/>
+         <mapping class="com.dk.model.UserLoginDetails"/>
 
     </session-factory>
 </hibernate-configuration>

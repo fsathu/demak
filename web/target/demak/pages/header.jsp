@@ -21,14 +21,28 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
+
         <li class="active"><a href="<s:url action ="viewHome"/>">Home</a></li>
-        <li><a href="<s:url action ="viewInvoice"/>">Invoice</a></li>
+          <s:set name="uType" value="%{#session.userType}"/>
+          <s:if test="%{#uType == 'admin' || #uType == 'semi_admin' || #uType == 'cashier'}">
+          <li><a href="<s:url action ="viewInvoice"/>">Invoice</a></li>
+</s:if>
+<<s:if test="%{#uType == 'admin' || #uType == 'semi_admin' || #uType == 'store_keeper'}">
         <li><a href="<s:url action ="viewProducts"/>">Product Details</a></li>
+  </s:if>
+          <s:if test="%{#uType == 'admin' || #uType == 'semi_admin' || #uType == 'cashier'}">
         <li><a href="#">Cash Summary</a></li>
+  </s:if>
+          <s:if test="%{#uType == 'admin' || #uType == 'semi_admin' || #uType == 'store_keeper'}">
         <li><a href="#">Stock Summary</a></li>
+  </s:if>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Security Details</a></li>
+          <li><a href="#">Users Accounts</a></li>
         <li><a href="#">Contact Us</a></li>
+
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-fixed-bottom navbar-inverse">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> <i id="greet"></i> <i>${sessionScope.email}</i></a></li>
         <li><a href="<s:url action="logout"/>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>

@@ -8,4 +8,5 @@ import com.dk.model.User;
 public interface UserService {
 
     User findUserbyEmailandPassword(String email, String password);
+
 }

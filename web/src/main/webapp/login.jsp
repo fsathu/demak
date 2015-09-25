@@ -30,7 +30,7 @@
 
         }
         .fonts{
-            color: white;
+            color:darkslategray;
         }
         .errors {
             background-color:#FFCCCC;
@@ -71,7 +71,7 @@
             </div>
 
             <div class="checkbox">
-                <label class="fonts"><input type="checkbox" id="chkBox" onclick="test()" style="visibility: hidden"> Remember me</label> | <a href="#" class="fonts" data-toggle="modal" data-target="#myModal">Forgot Password?</a>
+                <label class="fonts"><input type="checkbox" id="chkBox" > Remember me</label> | <a href="#" class="fonts" data-toggle="modal" data-target="#myModal">Forgot Password?</a>
             </div>
 
             <button type="reset" class="btn btn-default" id="reset">Reset</button>
@@ -101,8 +101,6 @@
                                     <input type="email" class="form-control" id="modalemail" placeholder="Enter email" name="email">
                                 </div>
                             </div>
-
-
                         <button type="submit" class="btn btn-primary">Reset</button>
                     </form>
 

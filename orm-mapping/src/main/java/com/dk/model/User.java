@@ -4,6 +4,8 @@ import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="user")
@@ -14,12 +16,17 @@ public class User implements Serializable {
     private String email;
     private String password;
     private Boolean status;
+    private String privilage;
     private PersonalDetails personalDetails;
+    private Set<UserLoginDetails> userLoginDetails = new HashSet<UserLoginDetails>(0);
 
-    public User(String email,String password, Boolean status) {
-        this.email =email;
+
+    public User(String email, String password, Boolean status, String privilage, PersonalDetails personalDetails) {
+        this.email = email;
         this.password = password;
         this.status = status;
+        this.privilage = privilage;
+        this.personalDetails = personalDetails;
     }
 
     public User() {
@@ -58,8 +65,20 @@ public class User implements Serializable {
     public void setPersonalDetails(PersonalDetails personalDetails) {
         this.personalDetails = personalDetails;
     }
+    @Column(name = "privilage", nullable = false)
+    public String getPrivilage() {
+        return privilage;
+    }
 
+    public void setPrivilage(String privilage) {
+        this.privilage = privilage;
+    }
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    public Set<UserLoginDetails> getUserLoginDetails() {
+        return userLoginDetails;
+    }
 
-
-
+    public void setUserLoginDetails(Set<UserLoginDetails> userLoginDetails) {
+        this.userLoginDetails = userLoginDetails;
+    }
 }
