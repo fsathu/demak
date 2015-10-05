@@ -35,6 +35,10 @@ public class ViewAction extends ActionSupport {
 
         return SUCCESS;
     }
+    public String viewUserCreation(){
+
+        return SUCCESS;
+    }
 
 
 

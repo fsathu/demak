@@ -38,7 +38,7 @@
   </s:if>
           <li><a href="#">Reports</a></li>
           <li><a href="#">Security Details</a></li>
-          <li><a href="#">Users Accounts</a></li>
+          <li><a href="<s:url action ="viewUserCreation"/>">Users Accounts</a></li>
         <li><a href="#">Contact Us</a></li>
 
       </ul>

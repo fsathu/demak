@@ -4,8 +4,8 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-        <constant name="struts.devMode" value="false"/>
-        <package name="Default"  extends="struts-default">
+        <constant name="struts.devMode"  value="false"/>
+        <package name="Default"  namespace="/" extends="struts-default">
                 <result-types>
                         <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
                 </result-types>
@@ -37,5 +37,10 @@
                         <result name="success" type="tiles">/product.tiles</result>
                         <result name="error" type="tiles">/product.tiles</result>
                 </action>
+                <action name="viewUserCreation" class="com.dk.action.ViewAction" method="viewProducts">
+                        <result name="success" type="tiles">/user.tiles</result>
+                        <result name="error" type="tiles">/user.tiles</result>
+                </action>
+
         </package>
 </struts>
