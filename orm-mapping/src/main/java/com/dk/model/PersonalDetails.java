@@ -16,21 +16,21 @@ public class PersonalDetails implements Serializable {
     private String last_name;
     private String age;
     private String gender;
-    private String userType;
+
 
     public PersonalDetails(){
 
     }
 
     public PersonalDetails(User user,String first_name,String last_name,String age,
-                           String gender,String userType
+                           String gender
     ){
         this.setUser(user);
         this.first_name=first_name;
         this.last_name=last_name;
         this.age=age;
         this.gender=gender;
-        this.userType=userType;
+
 
     }
 
@@ -70,13 +70,7 @@ public class PersonalDetails implements Serializable {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    @Column(name = "user_type", unique = false, nullable = false)
-    public String getUserType() {
-        return userType;
-    }
-    public void setUserType(String userType) {
-        this.userType = userType;
-    }
+
     @OneToOne(fetch = FetchType.LAZY)
     @PrimaryKeyJoinColumn
     public User getUser() {

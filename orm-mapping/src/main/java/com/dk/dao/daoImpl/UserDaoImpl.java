@@ -4,6 +4,7 @@ package com.dk.dao.daoImpl;
 import com.dk.dao.UserDao;
 import com.dk.model.User;
 import com.dk.util.HibernateUtil;
+
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
@@ -25,6 +26,19 @@ public class UserDaoImpl implements UserDao {
    /**/
     }
 
+    @Override
+    public User save(User user) {
+        org.hibernate.Session session = HibernateUtil.getSessionFactory().openSession();
+        try {
+            session.beginTransaction();
+            session.save(user);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            session.getTransaction().rollback();
+            e.printStackTrace();
+        }
+        return user;
+    }
 
 
 }

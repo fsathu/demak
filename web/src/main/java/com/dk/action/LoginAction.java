@@ -26,7 +26,7 @@ public class LoginAction extends ActionSupport implements ModelDriven<User>, Ses
 
 
     public String loginAction() {
-        if (userService.findUserbyEmailandPassword(user.getEmail(), user.getPassword()) != null) {
+        /*if (userService.findUserbyEmailandPassword(user.getEmail(), user.getPassword()) != null) {*/
             user = userService.findUserbyEmailandPassword(user.getEmail(), user.getPassword());
             sessionMap.put("userType", user.getPrivilage());
             sessionMap.put("email", user.getEmail());
@@ -35,10 +35,10 @@ public class LoginAction extends ActionSupport implements ModelDriven<User>, Ses
             userLoginDetailsService.save(userLoginDetails);
             sessionMap.put("loginid", userLoginDetails.getId());
             return SUCCESS;
-        } else {
-            addActionError("Please check Username and Password");
+       /* } else {*/
+          /*  addActionError("Please check Username and Password");
             return ERROR;
-        }
+        }*/
     }
 
     public String logoutAction() {

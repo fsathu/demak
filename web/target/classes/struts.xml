@@ -41,6 +41,11 @@
                         <result name="success" type="tiles">/user.tiles</result>
                         <result name="error" type="tiles">/user.tiles</result>
                 </action>
+                <action name="createUser" class="com.dk.action.AddUser" method="AddUser">
+                        <result name="success" type="tiles">/user.tiles</result>
+                        <result name="error" type="tiles">/user.tiles</result>
+                </action>
+
 
         </package>
 </struts>

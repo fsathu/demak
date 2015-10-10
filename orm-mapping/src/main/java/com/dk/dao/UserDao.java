@@ -9,6 +9,5 @@ public interface UserDao {
     public User findUserbyEmailandPassword(String email, String password);
 
 
-
-
+    User save(User user);
 }

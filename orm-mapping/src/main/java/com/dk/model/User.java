@@ -15,16 +15,16 @@ public class User implements Serializable {
 
     private String email;
     private String password;
-    private Boolean status;
+    private Boolean isActive;
     private String privilage;
     private PersonalDetails personalDetails;
     private Set<UserLoginDetails> userLoginDetails = new HashSet<UserLoginDetails>(0);
 
 
-    public User(String email, String password, Boolean status, String privilage, PersonalDetails personalDetails) {
+    public User(String email, String password, Boolean isActive, String privilage, PersonalDetails personalDetails) {
         this.email = email;
         this.password = password;
-        this.status = status;
+        this.isActive = isActive;
         this.privilage = privilage;
         this.personalDetails = personalDetails;
     }
@@ -49,12 +49,13 @@ public class User implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-    @Column(name = "status", nullable = false)
-    public Boolean getStatus() {
-        return status;
+
+    @Column(name = "isActive", nullable = false)
+        public Boolean getIsActive() {
+        return isActive;
     }
-    public void setStatus(Boolean status) {
-        this.status = status;
+    public void setIsActive(Boolean isActive) {
+        this.isActive = isActive;
     }
     @OneToOne(fetch = FetchType.LAZY, mappedBy = "user")
     @Cascade(value = CascadeType.ALL)
