@@ -23,10 +23,10 @@ public class AddUser extends ActionSupport implements ModelDriven<User> {
     public String AddUser() {
         if (user != null) {
 
-            user.setPersonalDetails(user.getPersonalDetails());
+           user.setPersonalDetails(user.getPersonalDetails());
             user.getPersonalDetails().setUser(user);
             user.getPersonalDetails().setEmail(user.getEmail());
-            userService.save(user);
+             userService.save(user);
             return SUCCESS;
         }
         return ERROR;

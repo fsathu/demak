@@ -24,19 +24,33 @@
         <processorPath useClasspath="true" />
         <module name="services" />
       </profile>
+<<<<<<< HEAD
       <profile default="false" name="Annotation profile for web" enabled="true">
+=======
+      <profile default="false" name="Annotation profile for orm-mapping" enabled="true">
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+<<<<<<< HEAD
         <module name="web" />
       </profile>
       <profile default="false" name="Annotation profile for orm-mapping" enabled="true">
+=======
+        <module name="orm-mapping" />
+      </profile>
+      <profile default="false" name="Annotation profile for web" enabled="true">
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+<<<<<<< HEAD
         <module name="orm-mapping" />
+=======
+        <module name="web" />
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

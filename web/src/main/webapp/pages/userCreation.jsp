@@ -14,26 +14,43 @@
             <div class="row" style="padding-bottom: 10px">
                 <div class="col-xs-8">
                     <label for="fn">First Name :*</label>
+<<<<<<< HEAD
                     <input class="form-control" id="fn" type="text" name="personalDetails.first_name">
                 </div>
 
+=======
+                    <input class="form-control" id="fn" type="text" name="first_name">
+                </div>
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
             </div>
             <div class="row" style="padding-bottom: 10px">
                 <div class="col-xs-8">
                     <label for="ln">Last Name :</label>
+<<<<<<< HEAD
                     <input class="form-control" id="ln" type="text" name="personalDetails.last_name">
+=======
+                    <input class="form-control" id="ln" type="text" name="last_name">
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
                 </div>
             </div>
             <div class="row" style="padding-bottom: 10px">
                 <div class="col-xs-8">
                     <label for="age">Age :</label>
+<<<<<<< HEAD
                     <input class="form-control" id="age" type="text" name="personalDetails.age">
+=======
+                    <input class="form-control" id="age" type="text" name="age">
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
                 </div>
             </div>
             <div class="row" style="padding-bottom: 10px">
                 <div class="col-xs-8">
                     <label for="gen">Gender :</label>
+<<<<<<< HEAD
                     <input class="form-control" id="gen" type="text" name="personalDetails.gender">
+=======
+                    <input class="form-control" id="gen" type="text" name="gender">
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
                 </div>
             </div>
             <div class="row" style="padding-bottom: 10px">

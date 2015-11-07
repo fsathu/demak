@@ -5,7 +5,11 @@
 
 <struts>
         <constant name="struts.devMode"  value="false"/>
+<<<<<<< HEAD
         <package name="xxx"  namespace="/" extends="struts-default">
+=======
+        <package name="Default"  namespace="/" extends="struts-default">
+>>>>>>> e9243e234f4ad7d1e07b0ecf65a20ca1edbd36b9
                 <result-types>
                         <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
                 </result-types>
