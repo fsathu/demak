@@ -1,0 +1,31 @@
+.form-control{
+    height: 30px;
+    width: 200px;
+}
+
+.form-div{
+
+    margin-top: 268px;
+    margin-left: 526px;
+}
+.widget1{
+    border-style: solid;
+    height: 460px;
+    width: 580px;
+
+}
+.widgetHeader{
+    font-size: large;
+
+}
+.widgetHeader2{
+
+    margin-left: 500px;
+}
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 20px;
+    width: 400px;
+    height: 350px;
+}
